@@ -1,11 +1,15 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './routes/AppRouter';
+import { AuthProvider } from './context/AuthContext.jsx';
 
 const App = () => {
 	return (
-		<main>
-			<h1>Ride Booking App</h1>
-			<p>Frontend structure is ready. Implement pages and routes next.</p>
-		</main>
+		<AuthProvider>
+			<BrowserRouter>
+				<AppRouter />
+			</BrowserRouter>
+		</AuthProvider>
 	);
 };
 

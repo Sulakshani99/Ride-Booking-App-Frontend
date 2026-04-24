@@ -1,7 +1,7 @@
 import React from 'react';
 import useAuth from '../hooks/useAuth';
 
-const DriverDashboardPage = () => {
+const UserDashboardPage = () => {
 	const { currentUser, logout } = useAuth();
 
 	return (
@@ -20,4 +20,4 @@ const DriverDashboardPage = () => {
 	);
 };
 
-export default DriverDashboardPage;
+export default UserDashboardPage;
