@@ -82,7 +82,7 @@ export const AuthProvider = ({ children }) => {
 				await logoutAccount({ accessToken: currentUser.accessToken });
 			}
 		} catch {
-			// Local cleanup should still happen even if API logout fails.
+			
 		} finally {
 			setCurrentUser(null);
 			setIsLoading(false);
